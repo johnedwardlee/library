@@ -51,6 +51,51 @@ img {
   background-color: rgb(158, 158, 158);
 }
 
+/* Add Book Dialog */
+dialog {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  margin-top: -102px;
+  left: 50%;
+  margin-left: -160px;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: white;
+  border: none;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+}
+
+dialog button {
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  font-weight: 600;
+  background-color: rgb(221, 221, 221);
+}
+
+dialog button:hover {
+  background-color: lightgrey;
+}
+
+dialog button:active {
+  background-color: rgb(196, 196, 196);
+}
+
+.dialog-input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+::backdrop {
+  background-color: rgba(211, 211, 211, 0.65);
+}
+
 /* Book Grid */
 #grid {
   width: calc(100% - 200px);
