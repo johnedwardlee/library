@@ -15,53 +15,28 @@
     </header>
     <main>
       <button id="add-book"><img src="icons/book-open-variant.svg" alt="" /> Add Book</button>
-      <div id="grid">
-        <article class="book">
-          <h3>Title<button class="fa fa-close icon"></button></h3>
-          <p>Author</p>
-          <p>Pages</p>
-          <button>Read</button>
-        </article>
-        <article class="book">
-          <h3>Title<button class="fa fa-close icon"></button></h3>
-          <p>Author</p>
-          <p>Pages</p>
-          <button>Read</button>
-        </article>
-        <article class="book">
-          <h3>Title<button class="fa fa-close icon"></button></h3>
-          <p>Author</p>
-          <p>Pages</p>
-          <button>Read</button>
-        </article>
-        <article class="book">
-          <h3>Title<button class="fa fa-close icon"></button></h3>
-          <p>Author</p>
-          <p>Pages</p>
-          <button>Read</button>
-        </article>
-      </div>
+      <div id="grid"></div>
     </main>
     <dialog id="add-book-dialog">
-      <h3>New Book</h3>
+      <h3>New Book<button class="fa fa-close icon"></button></h3>
       <form method="dialog">
         <div class="dialog-input">
           <label class="input-label">Title</label>
-          <input type="text" />
+          <input id="title" type="text" required />
         </div>
         <div class="dialog-input">
           <label class="input-label">Author</label>
-          <input type="text" />
+          <input id="author" type="text" required />
         </div>
         <div class="dialog-input">
           <label class="input-label">Pages</label>
-          <input type="number" />
+          <input id="pages" type="number" required />
         </div>
         <div class="dialog-input">
           <label class="input-label">Read</label>
-          <input type="checkbox" />
+          <input id="read" type="checkbox" />
         </div>
-        <button>Add</button>
+        <button id="add-confirm">Add</button>
       </form>
     </dialog>
   </body>

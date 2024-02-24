@@ -113,7 +113,8 @@ dialog button:active {
   gap: 5px;
 }
 
-.book h3 {
+.book h3,
+#add-book-dialog h3 {
   display: flex;
   justify-content: space-between;
 }
