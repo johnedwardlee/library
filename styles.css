@@ -100,7 +100,7 @@ dialog button:active {
 #grid {
   width: calc(100% - 200px);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -111,6 +111,8 @@ dialog button:active {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 300px;
+  justify-self: center;
 }
 
 .book h3,
